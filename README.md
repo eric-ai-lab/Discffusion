@@ -8,7 +8,7 @@ The project is developed based on HuggingFace Diffusers.
 </div>
 
 
-Diffusion models, such as Stable Diffusion, have shown incredible performance on text-to-image generation. Since text-to-image generation often requires models to generate visual concepts with fine-grained details and attributes specified in text prompts, can we leverage the powerful representations learned by pre-trained diffusion models for discriminative tasks such as image-text matching? To answer this question, we propose a novel approach, Discriminative Stable Diffusion (DSD), which turns pre-trained text-to-image diffusion models into few-shot discriminative learners. Our approach mainly uses the cross-attention score of a Stable Diffusion model to capture the mutual influence between visual and textual information and fine-tune the model via efficient attention-based prompt learning to perform image-text matching. By comparing DSD with state-of-the-art methods on several benchmark datasets, we demonstrate the potential of using pre-trained diffusion models for discriminative tasks with superior results on few-shot image-text matching.
+Diffusion models, such as Stable Diffusion, have shown incredible performance on text-to-image generation. Since text-to-image generation often requires models to generate visual concepts with fine-grained details and attributes specified in text prompts, can we leverage the powerful representations learned by pre-trained diffusion models for discriminative tasks such as image-text matching? To answer this question, we propose a novel approach, Discriminative Stable Diffusion (Discffusion), which turns pre-trained text-to-image diffusion models into few-shot discriminative learners. Our approach mainly uses the cross-attention score of a Stable Diffusion model to capture the mutual influence between visual and textual information and fine-tune the model via efficient attention-based prompt learning to perform image-text matching. By comparing Discffusion with state-of-the-art methods on several benchmark datasets, we demonstrate the potential of using pre-trained diffusion models for discriminative tasks with superior results on few-shot image-text matching.
 
 
 
@@ -42,27 +42,27 @@ python playground.py
 
 ### ComVG
 Download images from Visual Genome official websites.
-Put the Visual_Genome in the same path with DSD repo.
+Put the Visual_Genome in the same path with Discffusion repo.
 Download comvg_train.csv from [link](https://drive.google.com/drive/folders/1GOxInYPaVTZrFkhune-PN8LnV_weSIm6?usp=sharing) and put it in the [data](data) repo.
-Or you can directly download com_vg.zip from [link](https://drive.google.com/drive/folders/1GOxInYPaVTZrFkhune-PN8LnV_weSIm6?usp=sharing) and unzip it and put it in the same path with DSD repo.
+Or you can directly download com_vg.zip from [link](https://drive.google.com/drive/folders/1GOxInYPaVTZrFkhune-PN8LnV_weSIm6?usp=sharing) and unzip it and put it in the same path with Discffusion repo.
 
 
 
 ### RefCOCO
 We use the RefCOCOg split.
 Download from RefCOCOg github repo https://github.com/lichengunc/refer.
-Put refcocog in the same path with DSD repo.
+Put refcocog in the same path with Discffusion repo.
 
 
 
 ### VQA
 Download images from VQAv2 official websites.
-Put vqav2 in the same path with DSD repo.
+Put vqav2 in the same path with Discffusion repo.
 Download vqa_text_train.csv from [link](https://drive.google.com/drive/folders/1GOxInYPaVTZrFkhune-PN8LnV_weSIm6?usp=sharing) and put it in the [data](data) repo.
 
 
 
-The repo strutures are 
+The repo strutures are: 
 
 ```
 ├── DSD/
