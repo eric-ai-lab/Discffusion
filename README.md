@@ -2,7 +2,7 @@
 This is the code implementation for the paper: "Discffusion: Discriminative Diffusion Models as Few-shot Vision and Language Learners".
 The project is developed based on HuggingFace Diffusers.
 
-[Project Page](https://sites.google.com/view/dsddemo)
+[Project Page](https://sites.google.com/view/discffusion)
 <div align=center>  
 <img src='assets/teaser.png' width="50%">
 </div>
